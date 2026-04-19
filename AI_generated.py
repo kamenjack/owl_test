@@ -1,5 +1,4 @@
 import pandas as pd
-import re
 from owlready2 import *
 
 # 1. Read CSV
