@@ -1,0 +1,1894 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/lts_delay_class_based.owl"
+         xmlns="http://test.org/lts_delay_class_based.owl#">
+
+<owl:Ontology rdf:about="http://test.org/lts_delay_class_based.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_System">
+  <rdfs:domain rdf:resource="#Department"/>
+  <rdfs:range rdf:resource="#System"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_Symptom">
+  <rdfs:domain rdf:resource="#System"/>
+  <rdfs:range rdf:resource="#Symptom"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Department">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#System">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Symptom">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Mechanical">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Head_End_Power"/>
+            <rdf:Description rdf:about="#Sys_Brake_and_Air_Supply"/>
+            <rdf:Description rdf:about="#Sys_Power_Collection"/>
+            <rdf:Description rdf:about="#Sys_Lavatories_and_Toilets"/>
+            <rdf:Description rdf:about="#Sys_Derailment"/>
+            <rdf:Description rdf:about="#Sys_Lighting"/>
+            <rdf:Description rdf:about="#Sys_Employee_Injury"/>
+            <rdf:Description rdf:about="#Sys_Unscheduled_Turn_Of_Equipment"/>
+            <rdf:Description rdf:about="#Sys_Fuel_Supply"/>
+            <rdf:Description rdf:about="#Sys_Communication"/>
+            <rdf:Description rdf:about="#Sys_Propulsion_and_Dynamic_Brake"/>
+            <rdf:Description rdf:about="#Sys_Trucks_and_Suspension"/>
+            <rdf:Description rdf:about="#Sys_Main_and_Aux_Electric_Power"/>
+            <rdf:Description rdf:about="#Sys_Cab_Signal_ATC"/>
+            <rdf:Description rdf:about="#Sys_Consist"/>
+            <rdf:Description rdf:about="#Sys_Controls_and_Diagnostics"/>
+            <rdf:Description rdf:about="#Sys_Main_Diesel_Engine"/>
+            <rdf:Description rdf:about="#Sys_HVAC"/>
+            <rdf:Description rdf:about="#Sys_Doors"/>
+            <rdf:Description rdf:about="#Sys_Car_Cleaning"/>
+            <rdf:Description rdf:about="#Sys_Checked_Equipment_No_Defect_Found"/>
+            <rdf:Description rdf:about="#Sys_Carbody"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanical</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Unclassified">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unclassified</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_To_Be_Determined">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To Be Determined</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Carbody">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbody</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Controls_and_Diagnostics">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Controls &amp; Diagnostics</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Trucks_and_Suspension">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trucks &amp; Suspension</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Main_and_Aux_Electric_Power">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Main &amp; Aux Electric Power</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Propulsion_and_Dynamic_Brake">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propulsion &amp; Dynamic Brake</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Power_Collection">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power Collection</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Brake_and_Air_Supply">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brake &amp; Air Supply</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Cab_Signal_ATC">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_ATC"/>
+            <rdf:Description rdf:about="#Sym_Cab_Signal_and_ATC_No_Defect_Found"/>
+            <rdf:Description rdf:about="#Sym_PTC"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cab Signal ATC</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_ATC">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATC</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_PTC">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PTC</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Cab_Signal_and_ATC_No_Defect_Found">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cab Signal &amp; ATC - No Defect Found</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Communication">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_PTC"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communication</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Doors">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doors</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_HVAC">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HVAC</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Lighting">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lighting</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Lavatories_and_Toilets">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lavatories &amp; Toilets</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Main_Diesel_Engine">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Main Diesel Engine</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Fuel_Supply">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuel Supply</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Head_End_Power">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Head End Power</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Consist">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consist</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Car_Cleaning">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Car Cleaning</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Employee_Injury">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employee Injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Checked_Equipment_No_Defect_Found">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Checked Equipment No Defect Found</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Derailment">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Derailment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Unscheduled_Turn_Of_Equipment">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unscheduled Turn Of Equipment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Engineering">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Track_and_Structures"/>
+            <rdf:Description rdf:about="#Sys_Communications_and_Signals"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+            <rdf:Description rdf:about="#Sys_Power"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Track_and_Structures">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_Sperry_Cyclical_track_inspection_and_testing"/>
+            <rdf:Description rdf:about="#Sym_Movable_Bridge"/>
+            <rdf:Description rdf:about="#Sym_Insulated_Joint"/>
+            <rdf:Description rdf:about="#Sym_ROW_NDF"/>
+            <rdf:Description rdf:about="#Sym_Switch"/>
+            <rdf:Description rdf:about="#Sym_ROW_Conditions"/>
+            <rdf:Description rdf:about="#Sym_Employee_Injury"/>
+            <rdf:Description rdf:about="#Sym_Rails"/>
+            <rdf:Description rdf:about="#Sym_Movable_Bridge_No_Cause_Found"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+            <rdf:Description rdf:about="#Sym_Track_Equipment_Failure"/>
+            <rdf:Description rdf:about="#Sym_Program_and_Production_Trackwork"/>
+            <rdf:Description rdf:about="#Sym_Fixed_Bridge"/>
+            <rdf:Description rdf:about="#Sym_Operating_Restrictions"/>
+            <rdf:Description rdf:about="#Sym_Structures"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Track &amp; Structures</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_ROW_Conditions">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROW Conditions</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_ROW_NDF">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROW - NDF</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Operating_Restrictions">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Restrictions</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Program_and_Production_Trackwork">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Program &amp; Production Trackwork</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Track_Equipment_Failure">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Track Equipment Failure</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Sperry_Cyclical_track_inspection_and_testing">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sperry; Cyclical track inspection and testing</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Insulated_Joint">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulated Joint</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Switch">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Switch</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Movable_Bridge">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movable Bridge</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Movable_Bridge_No_Cause_Found">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Movable Bridge - No Cause Found</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Fixed_Bridge">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fixed Bridge</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Structures">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Structures</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Rails">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rails</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Employee_Injury">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employee Injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Communications_and_Signals">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_Intermediate_Territory"/>
+            <rdf:Description rdf:about="#Sym_CS_ATC"/>
+            <rdf:Description rdf:about="#Sym_Switch_Failure"/>
+            <rdf:Description rdf:about="#Sym_Intermediate_Territory_Track_Circuit"/>
+            <rdf:Description rdf:about="#Sym_PTC_System"/>
+            <rdf:Description rdf:about="#Sym_Crossing_Check_No_Defect_Found"/>
+            <rdf:Description rdf:about="#Sym_Signals"/>
+            <rdf:Description rdf:about="#Sym_Employee_Injury"/>
+            <rdf:Description rdf:about="#Sym_CTC_System"/>
+            <rdf:Description rdf:about="#Sym_Grade_Crossings"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+            <rdf:Description rdf:about="#Sym_Interlocking"/>
+            <rdf:Description rdf:about="#Sym_Telco_Utilities"/>
+            <rdf:Description rdf:about="#Sym_Communication_Systems"/>
+            <rdf:Description rdf:about="#Sym_Interlocking_Track_Circuit"/>
+            <rdf:Description rdf:about="#Sym_No_Cause_Found"/>
+            <rdf:Description rdf:about="#Sym_Moveable_Bridge"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communications &amp; Signals</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Switch_Failure">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Switch Failure</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Interlocking">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interlocking</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Interlocking_Track_Circuit">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interlocking - Track Circuit</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Intermediate_Territory">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intermediate Territory</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Intermediate_Territory_Track_Circuit">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intermediate Territory - Track Circuit</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_CTC_System">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTC System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Grade_Crossings">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grade Crossings</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_No_Cause_Found">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No Cause Found</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Communication_Systems">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communication Systems</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Telco_Utilities">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telco/Utilities</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Signals">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Signals</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_PTC_System">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PTC System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_CS_ATC">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CS/ATC</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Moveable_Bridge">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moveable Bridge</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Crossing_Check_No_Defect_Found">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crossing Check No Defect Found</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Power">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_Track_Circuit_Bond"/>
+            <rdf:Description rdf:about="#Sym_Catenary_System"/>
+            <rdf:Description rdf:about="#Sym_Local_Utility"/>
+            <rdf:Description rdf:about="#Sym_SCADA"/>
+            <rdf:Description rdf:about="#Sym_Employee_Injury"/>
+            <rdf:Description rdf:about="#Sym_Third_Rail_System"/>
+            <rdf:Description rdf:about="#Sym_Human_or_Animal_Interference"/>
+            <rdf:Description rdf:about="#Sym_Signal_Power_System"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+            <rdf:Description rdf:about="#Sym_Substation"/>
+            <rdf:Description rdf:about="#Sym_Moveable_Bridge"/>
+            <rdf:Description rdf:about="#Sym_Catenary_System_No_Defect_Found"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Catenary_System">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catenary System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Catenary_System_No_Defect_Found">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catenary System - No Defect Found</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Third_Rail_System">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Third Rail System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Substation">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_SCADA">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SCADA</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Signal_Power_System">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Signal Power System</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Local_Utility">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Utility</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Human_or_Animal_Interference">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human or Animal Interference</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Track_Circuit_Bond">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Track Circuit - Bond</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Transportation">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Train_Dispatching"/>
+            <rdf:Description rdf:about="#Sys_Employee_Illness"/>
+            <rdf:Description rdf:about="#Sys_Fleet_Management"/>
+            <rdf:Description rdf:about="#Sys_Crew_Performance"/>
+            <rdf:Description rdf:about="#Sys_Employee_Injury"/>
+            <rdf:Description rdf:about="#Sys_Train_Error"/>
+            <rdf:Description rdf:about="#Sys_Gapped"/>
+            <rdf:Description rdf:about="#Sys_Train_Routing"/>
+            <rdf:Description rdf:about="#Sys_Crew_Dispatching"/>
+            <rdf:Description rdf:about="#Sys_Yard_Operations"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transportation</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Crew_Performance">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_ECT"/>
+            <rdf:Description rdf:about="#Sym_Gapped"/>
+            <rdf:Description rdf:about="#Sym_Engineers"/>
+            <rdf:Description rdf:about="#Sym_Conductors"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+            <rdf:Description rdf:about="#Sym_Crew_Reported_Symptom_NDF"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crew Performance</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Engineers">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineers</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Conductors">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conductors</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Crew_Reported_Symptom_NDF">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crew Reported Symptom - NDF</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Gapped">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gapped</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_ECT">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECT</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Train_Dispatching">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Train Dispatching</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Yard_Operations">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_Yard_master"/>
+            <rdf:Description rdf:about="#Sym_switching_crew"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yard Operations</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Yard_master">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yard master</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_switching_crew">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">switching crew</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Crew_Dispatching">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_Shortage_of_Crewmen"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crew Dispatching</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Shortage_of_Crewmen">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shortage of Crewmen</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Train_Routing">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Train Routing</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Train_Error">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Train Error</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Employee_Illness">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employee Illness</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Gapped">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gapped</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Fleet_Management">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_Fuel"/>
+            <rdf:Description rdf:about="#Sym_Unscheduled_Turn_Of_Equipment"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fleet Management</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Fuel">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuel</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Unscheduled_Turn_Of_Equipment">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unscheduled Turn Of Equipment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Other">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Human_Obstruction"/>
+            <rdf:Description rdf:about="#Sys_Derailment"/>
+            <rdf:Description rdf:about="#Sys_Coast_Guard_Movable_Bridge_Openings"/>
+            <rdf:Description rdf:about="#Sys_Unfounded_Non_MNR_Report"/>
+            <rdf:Description rdf:about="#Sys_Infrastructure_Accident"/>
+            <rdf:Description rdf:about="#Sys_Collision_Train_Accident"/>
+            <rdf:Description rdf:about="#Sys_Wild_Detector"/>
+            <rdf:Description rdf:about="#Sys_Checked_Equipment_No_Defect_Found"/>
+            <rdf:Description rdf:about="#Sys_Employee_Injury"/>
+            <rdf:Description rdf:about="#Sys_Bridge_Strike"/>
+            <rdf:Description rdf:about="#Sys_Crossing_Check_No_Defect_Found"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+            <rdf:Description rdf:about="#Sys_Debris_Vandalism"/>
+            <rdf:Description rdf:about="#Sys_Amtrak"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Collision_Train_Accident">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collision - Train Accident</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Amtrak">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amtrak</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Coast_Guard_Movable_Bridge_Openings">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coast Guard/Movable Bridge Openings</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Debris_Vandalism">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Debris / Vandalism</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Bridge_Strike">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bridge Strike</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Unfounded_Non_MNR_Report">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unfounded Non MNR Report</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Crossing_Check_No_Defect_Found">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crossing Check / No Defect Found</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Human_Obstruction">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Obstruction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Infrastructure_Accident">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infrastructure Accident</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Wild_Detector">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_Inspected_No_Defect_Found"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wild Detector</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Inspected_No_Defect_Found">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inspected - No Defect Found</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Police">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Grand_Central_Terminal"/>
+            <rdf:Description rdf:about="#Sys_Vandalism"/>
+            <rdf:Description rdf:about="#Sys_Outlying_Stations"/>
+            <rdf:Description rdf:about="#Sys_Non_Railroad_Incident"/>
+            <rdf:Description rdf:about="#Sys_Security"/>
+            <rdf:Description rdf:about="#Sys_Employee_Injury"/>
+            <rdf:Description rdf:about="#Sys_Right_of_Way"/>
+            <rdf:Description rdf:about="#Sys_Fatality"/>
+            <rdf:Description rdf:about="#Sys_Fare_Dispute"/>
+            <rdf:Description rdf:about="#Sys_Object_Left_On_Train"/>
+            <rdf:Description rdf:about="#Sys_Trespasser"/>
+            <rdf:Description rdf:about="#Sys_Grade_Crossing"/>
+            <rdf:Description rdf:about="#Sys_Mask_Compliance"/>
+            <rdf:Description rdf:about="#Sys_On_Board_Trains"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Police</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_On_Board_Trains">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sym_Unruly_Passenger"/>
+            <rdf:Description rdf:about="#Sym_Assault"/>
+            <rdf:Description rdf:about="#Sym_Public_Safety_Protocols"/>
+            <rdf:Description rdf:about="#Sym_To_Be_Determined"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">On Board Trains</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Assault">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assault</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Unruly_Passenger">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unruly Passenger</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Public_Safety_Protocols">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Safety Protocols</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Grand_Central_Terminal">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grand Central Terminal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Outlying_Stations">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outlying Stations</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Right_of_Way">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Right-of-Way</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Grade_Crossing">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grade Crossing</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Non_Railroad_Incident">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Railroad Incident</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Trespasser">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trespasser</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Vandalism">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vandalism</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Security">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Object_Left_On_Train">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object Left On Train</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Fatality">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fatality</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Mask_Compliance">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mask Compliance</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Fare_Dispute">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fare Dispute</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Capital">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Shops_Yards_Facilities"/>
+            <rdf:Description rdf:about="#Sys_Bridges"/>
+            <rdf:Description rdf:about="#Sys_Grand_Central_Terminal"/>
+            <rdf:Description rdf:about="#Sys_Catenary_Power"/>
+            <rdf:Description rdf:about="#Sys_Stations"/>
+            <rdf:Description rdf:about="#Sys_Track_and_Right_of_Way"/>
+            <rdf:Description rdf:about="#Sys_Contractor_Injury"/>
+            <rdf:Description rdf:about="#Sys_Non_Railroad_IandC"/>
+            <rdf:Description rdf:about="#Sys_Signal"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capital</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Shops_Yards_Facilities">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shops, Yards, Facilities</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Stations">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stations</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Catenary_Power">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catenary/Power</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Signal">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Signal</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Track_and_Right_of_Way">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Track and Right-of-Way</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Bridges">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bridges</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Non_Railroad_IandC">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Railroad/I&amp;C</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Contractor_Injury">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contractor Injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Environmental">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Winter_Storm"/>
+            <rdf:Description rdf:about="#Sys_Speed_Restriction_weather_related"/>
+            <rdf:Description rdf:about="#Sys_Extreme_Cold"/>
+            <rdf:Description rdf:about="#Sys_Oil_Leak_Spill"/>
+            <rdf:Description rdf:about="#Sys_Lightning"/>
+            <rdf:Description rdf:about="#Sys_Wind"/>
+            <rdf:Description rdf:about="#Sys_Slip_Slide"/>
+            <rdf:Description rdf:about="#Sys_Rain_Flooding"/>
+            <rdf:Description rdf:about="#Sys_Extreme_Heat"/>
+            <rdf:Description rdf:about="#Sys_Hurricane"/>
+            <rdf:Description rdf:about="#Sys_Tropical_Storm"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+            <rdf:Description rdf:about="#Sys_Environmental_Obstruction_Wildlife"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Winter_Storm">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_Storms_To_Be_Named"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Winter Storm</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Storms_To_Be_Named">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Storms To Be Named</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Wind">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wind</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Rain_Flooding">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_Storms_To_Be_Named"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rain/Flooding</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Extreme_Heat">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_Speed_Restriction"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme Heat</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_Speed_Restriction">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speed Restriction</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Extreme_Cold">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_Speed_Restriction"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extreme Cold</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Speed_Restriction_weather_related">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speed Restriction (weather-related)</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Slip_Slide">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slip Slide</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Hurricane">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_Storms_To_Be_Named"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hurricane</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Environmental_Obstruction_Wildlife">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Obstruction / Wildlife</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Tropical_Storm">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_Storms_To_Be_Named"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tropical Storm</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Lightning">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lightning</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Oil_Leak_Spill">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oil Leak/Spill</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Customer_Related">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Special_Event_Ridership"/>
+            <rdf:Description rdf:about="#Sys_Heavy_Ridership_Slow_Loading"/>
+            <rdf:Description rdf:about="#Sys_Illness"/>
+            <rdf:Description rdf:about="#Sys_Injury"/>
+            <rdf:Description rdf:about="#Sys_Change_in_Track_Platform"/>
+            <rdf:Description rdf:about="#Sys_Group_Move"/>
+            <rdf:Description rdf:about="#Sys_Fare_Dispute"/>
+            <rdf:Description rdf:about="#Sys_Customer_Service"/>
+            <rdf:Description rdf:about="#Sys_Refused_Medical_Attention"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Customer-Related</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Illness">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Illness</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Injury">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Injury</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Heavy_Ridership_Slow_Loading">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Heavy Ridership / Slow Loading</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Change_in_Track_Platform">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change in Track / Platform</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Group_Move">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Group Move</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Customer_Service">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Customer Service</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Special_Event_Ridership">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Special Event Ridership</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Refused_Medical_Attention">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refused Medical Attention</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Hold">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Out_Of_Slot"/>
+            <rdf:Description rdf:about="#Sys_CP75"/>
+            <rdf:Description rdf:about="#Sys_CP216"/>
+            <rdf:Description rdf:about="#Sys_CP12"/>
+            <rdf:Description rdf:about="#Sys_CP274"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hold</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_CP12">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CP12</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_CP75">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CP75</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_CP216">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CP216</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_CP274">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CP274</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Out_Of_Slot">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Out Of Slot</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Other_Agency">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_FRA_NTSB_PTSB_Other_Agency"/>
+            <rdf:Description rdf:about="#Sys_Fire_On_Near_Tracks"/>
+            <rdf:Description rdf:about="#Sys_NYC_Water"/>
+            <rdf:Description rdf:about="#Sys_Derailment"/>
+            <rdf:Description rdf:about="#Sys_Freight_Railroad"/>
+            <rdf:Description rdf:about="#Sys_Coast_Guard_Movable_Bridge_Openings"/>
+            <rdf:Description rdf:about="#Sys_Local_Power_Utility_Outage"/>
+            <rdf:Description rdf:about="#Sys_Bridge_Strike"/>
+            <rdf:Description rdf:about="#Sys_Grade_Crossing_Incidents"/>
+            <rdf:Description rdf:about="#Sys_Con_Edison"/>
+            <rdf:Description rdf:about="#Sys_Unclassified"/>
+            <rdf:Description rdf:about="#Sys_Amtrak"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other Agency</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Grade_Crossing_Incidents">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grade Crossing Incidents</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Freight_Railroad">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Freight Railroad</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_FRA_NTSB_PTSB_Other_Agency">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FRA/NTSB/PTSB/Other Agency</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Fire_On_Near_Tracks">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fire On/Near Tracks</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Con_Edison">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Con Edison</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Local_Power_Utility_Outage">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Local Power Utility Outage</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_NYC_Water">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYC Water</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Meadowlands">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Mechanical"/>
+            <rdf:Description rdf:about="#Sys_Late_Arrival_at_CP216"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meadowlands</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Late_Arrival_at_CP216">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late Arrival at CP216</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Mechanical">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanical</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Shore_Line_East">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Sys_Late_Arrival_at_NH"/>
+            <rdf:Description rdf:about="#Sys_Mechanical"/>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shore Line East</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_Late_Arrival_at_NH">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_To_Be_Determined"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Late Arrival at NH</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dept_Amtrak">
+  <rdfs:subClassOf rdf:resource="#Department"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_System"/>
+      <owl:someValuesFrom rdf:resource="#Sys_nan"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amtrak</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sys_nan">
+  <rdfs:subClassOf rdf:resource="#System"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#has_Symptom"/>
+      <owl:someValuesFrom rdf:resource="#Sym_nan"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nan</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sym_nan">
+  <rdfs:subClassOf rdf:resource="#Symptom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nan</rdfs:label>
+</owl:Class>
+
+
+</rdf:RDF>
