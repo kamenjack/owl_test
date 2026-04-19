@@ -1,0 +1,2201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4/"
+     xml:base="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#is_Disabled -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#is_Disabled">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ATC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ATC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Amtrak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Amtrak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Assault -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Assault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridge_Strike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridge_Strike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridges -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridges">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP12 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP12">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP216 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP216">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP274 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP274">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP75 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP75">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CTC_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CTC_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Capital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Capital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridges"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Contractor_Injury"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal_Complex"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Stations"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_and_Right-of-Way"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary/Power"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_/_I&amp;C"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Shops,_Yards,_Facilities"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Car_Cleaning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Car_Cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Carbody -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Carbody">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary_System_-_No_Defect_Found -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary_System_-_No_Defect_Found">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Checked_Equipment_No_Defect_Found -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Checked_Equipment_No_Defect_Found">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Collision_-_Train_Accident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Collision_-_Train_Accident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Con_Edison -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Con_Edison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Conductors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Conductors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Consist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Consist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Contractor_Injury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Contractor_Injury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Dispatching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Dispatching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Shortage_of_Crewmen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Performance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Performance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Conductors"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Reported_Symptom_-_NDF"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Engineers"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ECT_(Engineer/Conductor/Trainmen)"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped/Symptom"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Reported_Symptom_-_NDF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Reported_Symptom_-_NDF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Customer-Related -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Customer-Related">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Customer_Service"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fare_Dispute"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Group_Move"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Illness"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Injury"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Refused_Medical_Attention"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Special_Event_Ridership"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Change_in_Track_/_Platform"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Heavy_Ridership_/_Slow_Loading"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Customer_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Customer_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#MNR_Delay_Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Derailment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Derailment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Doors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Doors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employe_Injury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employe_Injury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Illness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Illness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communications_&amp;_SIgnals"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_&amp;_Structures"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Engineers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Engineers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Environmental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Environmental">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Cold"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Heat"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Hurricane"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lightning_Strike"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Slip_Slide"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Tropical_Storm"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wind"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Winter_Storm"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Environmental_Obstruction_/_Wildlife"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Oil_Leak/Spill"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rain/Flooding"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Speed_Restriction_(weather-related)"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Cold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Cold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#&apos;Speed_Restriction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Heat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Heat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#&apos;Speed_Restriction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fare_Dispute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fare_Dispute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fatality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fatality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fixed_Bridge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fixed_Bridge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fleet_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fleet_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Freight_Railroad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Freight_Railroad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel_Supply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel_Supply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing_Incident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing_Incident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal_Complex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal_Complex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Group_Move -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Group_Move">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#HVAC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#HVAC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Head_End_Power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Head_End_Power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Hold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Hold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP12"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP216"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP274"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP75"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Out_of_Slot"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_Obstruction_On_or_Near_Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_Obstruction_On_or_Near_Platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_or_Animal_Interference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_or_Animal_Interference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Hurricane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Hurricane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Storms_To_Be_Named"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Illness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Illness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Infrastructure_Incident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Infrastructure_Incident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Injury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Injury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Inspected_-_No_Defect_Found -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Inspected_-_No_Defect_Found">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Insulated_Joint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Insulated_Joint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Interlocking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Interlocking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Interlocking_-_Track_Circuit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Interlocking_-_Track_Circuit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Intermediate_Territory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Intermediate_Territory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Intermediate_Territory_-_Track_Circuit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Intermediate_Territory_-_Track_Circuit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lighting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lighting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lightning_Strike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lightning_Strike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility_Outage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility_Outage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#MNR_Delay_Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#MNR_Delay_Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_Diesel_Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_Diesel_Engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Mask_Compliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Mask_Compliance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Mechanical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Mechanical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Car_Cleaning"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Carbody"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Checked_Equipment_No_Defect_Found"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Consist"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Derailment"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Doors"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel_Supply"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#HVAC"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Head_End_Power"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lighting"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_Diesel_Engine"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power_Collection"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Brake_&amp;_Air_Supply"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Controls_&amp;_Diagnostics"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lavatories_&amp;_Toilets"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_&amp;_Aux_Electric_Power"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Propulsion_&amp;_Dynamic_Brake"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trucks_&amp;_Suspension"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Movable_Bridge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Movable_Bridge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Movable_Bridge_-_No_Cause_Found -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Movable_Bridge_-_No_Cause_Found">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Moveable_Bridge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Moveable_Bridge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#NYC_Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#NYC_Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#No_Cause_Found -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#No_Cause_Found">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_Incident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_Incident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Object_Left_On_Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Object_Left_On_Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#On_Board_Trains -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#On_Board_Trains">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Assault"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Public_Safety_Protocols"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unruly_Passenger"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Operating_Restrictions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Operating_Restrictions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Other -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Amtrak"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridge_Strike"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Checked_Equipment_No_Defect_Found"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Collision_-_Train_Accident"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Derailment"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_Obstruction_On_or_Near_Platform"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Infrastructure_Incident"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unfounded_Non_MNR_Report"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wild_Detector"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Moveable_Bridge_Openings"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check_/_No_Defect_Found"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Debris_/_Vandalism"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Other_Agency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Other_Agency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Amtrak"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridge_Strike"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Con_Edison"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Derailment"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Freight_Railroad"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing_Incident"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility_Outage"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#NYC_Water"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Movable_Bridge_Openings"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#FRA/NTSB/PTSB/Other_Agency"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fire_On/Near_Tracks"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Out_of_Slot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Out_of_Slot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Outlying_Stations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Outlying_Stations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#PTC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#PTC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#PTC_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#PTC_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Police -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Police">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employe_Injury"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fare_Dispute"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fatality"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Mask_Compliance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_Incident"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Object_Left_On_Train"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#On_Board_Trains"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Outlying_Stations"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Right-of-Way"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Security"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trespasser"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Vandalism"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary_System"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary_System_-_No_Defect_Found"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_or_Animal_Interference"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Moveable_Bridge"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#SCADA"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signal_Power_System"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Substation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Third_Rail_System"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_Circuit_-_Bond"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power_Collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power_Collection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Public_Safety_Protocols -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Public_Safety_Protocols">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ROW_-_NDF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ROW_-_NDF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ROW_Conditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ROW_Conditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Refused_Medical_Attention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Refused_Medical_Attention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Right-of-Way -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Right-of-Way">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#SCADA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#SCADA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Shortage_of_Crewmen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Shortage_of_Crewmen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signal_Power_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signal_Power_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Slip_Slide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Slip_Slide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Special_Event_Ridership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Special_Event_Ridership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Stations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Stations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Storms_To_Be_Named -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Storms_To_Be_Named">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Structures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Structures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Substation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Substation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Switch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Switch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Switch_Failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Switch_Failure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#MNR_Delay_Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#MNR_Delay_Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Third_Rail_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Third_Rail_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_Circuit_-_Bond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_Circuit_-_Bond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_Equipment_Failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_Equipment_Failure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_and_Right-of-Way -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_and_Right-of-Way">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Dispatching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Dispatching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Error -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Error">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Routing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Routing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Department"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_System"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Dispatching"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Performance"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Illness"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fleet_Management"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Dispatching"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Error"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Routing"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_Operations"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trespasser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trespasser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Tropical_Storm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Tropical_Storm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Storms_To_Be_Named"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unfounded_Non_MNR_Report -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unfounded_Non_MNR_Report">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unruly_Passenger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unruly_Passenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Vandalism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Vandalism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wild_Detector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wild_Detector">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Inspected_-_No_Defect_Found"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Winter_Storm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Winter_Storm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Storms_To_Be_Named"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_Operations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_Operations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_master"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#switching_crew"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_master -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_master">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#switching_crew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#switching_crew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#&apos;Speed_Restriction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#&apos;Speed_Restriction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Brake_&amp;_Air_Supply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Brake_&amp;_Air_Supply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CS/ATC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CS/ATC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ATC"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#PTC"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC_NDF"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC_NDF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC_NDF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary/Power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary/Power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Change_in_Track_/_Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Change_in_Track_/_Platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Movable_Bridge_Openings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Movable_Bridge_Openings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Moveable_Bridge_Openings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Moveable_Bridge_Openings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communications_&amp;_SIgnals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communications_&amp;_SIgnals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CTC_System"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication_Systems"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossings"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Interlocking"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Interlocking_-_Track_Circuit"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Intermediate_Territory"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Intermediate_Territory_-_Track_Circuit"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Moveable_Bridge"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#No_Cause_Found"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#PTC_System"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signals"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Switch_Failure"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CS/ATC"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check/No_Defect_Found"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Telco/Utilities"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Controls_&amp;_Diagnostics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Controls_&amp;_Diagnostics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check/No_Defect_Found -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check/No_Defect_Found">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check_/_No_Defect_Found -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check_/_No_Defect_Found">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Debris_/_Vandalism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Debris_/_Vandalism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ECT_(Engineer/Conductor/Trainmen) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ECT_(Engineer/Conductor/Trainmen)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury/Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury/Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Environmental_Obstruction_/_Wildlife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Environmental_Obstruction_/_Wildlife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#FRA/NTSB/PTSB/Other_Agency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#FRA/NTSB/PTSB/Other_Agency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fire_On/Near_Tracks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fire_On/Near_Tracks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped/Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped/Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Heavy_Ridership_/_Slow_Loading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Heavy_Ridership_/_Slow_Loading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lavatories_&amp;_Toilets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lavatories_&amp;_Toilets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_&amp;_Aux_Electric_Power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_&amp;_Aux_Electric_Power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_/_I&amp;C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_/_I&amp;C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Oil_Leak/Spill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Oil_Leak/Spill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Program_&amp;_Production_Trackwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Program_&amp;_Production_Trackwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Propulsion_&amp;_Dynamic_Brake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Propulsion_&amp;_Dynamic_Brake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rails/Track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rails/Track">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rain/Flooding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rain/Flooding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Storms_To_Be_Named"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Shops,_Yards,_Facilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Shops,_Yards,_Facilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Speed_Restriction_(weather-related) -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Speed_Restriction_(weather-related)">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Sperry;_Cyclical_track_inspection/testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Sperry;_Cyclical_track_inspection/testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Telco/Utilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Telco/Utilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_&amp;_Structures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_&amp;_Structures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#has_Symptom"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fixed_Bridge"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Insulated_Joint"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Movable_Bridge"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Movable_Bridge_-_No_Cause_Found"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Operating_Restrictions"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ROW_-_NDF"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ROW_Conditions"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Structures"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Switch"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_Equipment_Failure"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury/Symptom"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Program_&amp;_Production_Trackwork"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rails/Track"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Sperry;_Cyclical_track_inspection/testing"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trucks_&amp;_Suspension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trucks_&amp;_Suspension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment/Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment/Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ATC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Assault"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CTC_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary_System_-_No_Defect_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Conductors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Reported_Symptom_-_NDF"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Engineers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fixed_Bridge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_or_Animal_Interference"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Inspected_-_No_Defect_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Insulated_Joint"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Interlocking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Interlocking_-_Track_Circuit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Intermediate_Territory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Intermediate_Territory_-_Track_Circuit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Movable_Bridge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Movable_Bridge_-_No_Cause_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Moveable_Bridge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#No_Cause_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Operating_Restrictions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#PTC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#PTC_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Public_Safety_Protocols"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ROW_-_NDF"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ROW_Conditions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#SCADA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Shortage_of_Crewmen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signal_Power_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Storms_To_Be_Named"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Structures"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Substation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Switch"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Switch_Failure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Third_Rail_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#To_Be_Determined"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_Circuit_-_Bond"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_Equipment_Failure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unruly_Passenger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_master"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#switching_crew"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#&apos;Speed_Restriction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CS/ATC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC_NDF"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check/No_Defect_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#ECT_(Engineer/Conductor/Trainmen)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury/Symptom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped/Symptom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Program_&amp;_Production_Trackwork"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rails/Track"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Sperry;_Cyclical_track_inspection/testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Telco/Utilities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment/Symptom"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Amtrak"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridge_Strike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridges"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP12"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP216"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP274"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP75"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Car_Cleaning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Carbody"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Checked_Equipment_No_Defect_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Collision_-_Train_Accident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Con_Edison"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Consist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Contractor_Injury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Dispatching"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Performance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Customer_Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Derailment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Doors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employe_Injury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Illness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Cold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Heat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fare_Dispute"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fatality"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fleet_Management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Freight_Railroad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel_Supply"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing_Incident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal_Complex"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Group_Move"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#HVAC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Head_End_Power"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_Obstruction_On_or_Near_Platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Hurricane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Illness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Infrastructure_Incident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Injury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lighting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lightning_Strike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility_Outage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_Diesel_Engine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Mask_Compliance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#NYC_Water"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_Incident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Object_Left_On_Train"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#On_Board_Trains"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Out_of_Slot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Outlying_Stations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power_Collection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Refused_Medical_Attention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Right-of-Way"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Security"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Signal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Slip_Slide"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Special_Event_Ridership"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Stations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_and_Right-of-Way"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Dispatching"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Error"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Routing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trespasser"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Tropical_Storm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unfounded_Non_MNR_Report"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Vandalism"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wild_Detector"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wind"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Winter_Storm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_Operations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Brake_&amp;_Air_Supply"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Catenary/Power"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Change_in_Track_/_Platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Movable_Bridge_Openings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Moveable_Bridge_Openings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communications_&amp;_SIgnals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Controls_&amp;_Diagnostics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check_/_No_Defect_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Debris_/_Vandalism"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Environmental_Obstruction_/_Wildlife"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#FRA/NTSB/PTSB/Other_Agency"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fire_On/Near_Tracks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Heavy_Ridership_/_Slow_Loading"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lavatories_&amp;_Toilets"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_&amp;_Aux_Electric_Power"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_/_I&amp;C"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Oil_Leak/Spill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Propulsion_&amp;_Dynamic_Brake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rain/Flooding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Shops,_Yards,_Facilities"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Speed_Restriction_(weather-related)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_&amp;_Structures"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trucks_&amp;_Suspension"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Amtrak"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Bridge_Strike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP12"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP216"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP274"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#CP75"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Car_Cleaning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Carbody"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Checked_Equipment_No_Defect_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Collision_-_Train_Accident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Con_Edison"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Consist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Dispatching"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crew_Performance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Customer_Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Derailment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Doors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employe_Injury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Illness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Employee_Injury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Cold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Extreme_Heat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fare_Dispute"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fatality"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fleet_Management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Freight_Railroad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fuel_Supply"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Gapped"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grade_Crossing_Incident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Grand_Central_Terminal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Group_Move"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#HVAC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Head_End_Power"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Human_Obstruction_On_or_Near_Platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Hurricane"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Illness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Infrastructure_Incident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Injury"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lighting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lightning_Strike"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Local_Utility_Outage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_Diesel_Engine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Mask_Compliance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#NYC_Water"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Non-Railroad_Incident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Object_Left_On_Train"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#On_Board_Trains"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Out_of_Slot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Outlying_Stations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Power_Collection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Refused_Medical_Attention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Right-of-Way"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Security"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Slip_Slide"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Special_Event_Ridership"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Dispatching"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Error"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Train_Routing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trespasser"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Tropical_Storm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unclassified"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unfounded_Non_MNR_Report"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Unscheduled_Turn_Of_Equipment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Vandalism"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wild_Detector"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Wind"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Winter_Storm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Yard_Operations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Brake_&amp;_Air_Supply"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Cab_Signal_ATC/PTC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Change_in_Track_/_Platform"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Movable_Bridge_Openings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Coast_Guard/Moveable_Bridge_Openings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Communications_&amp;_SIgnals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Controls_&amp;_Diagnostics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Crossing_Check_/_No_Defect_Found"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Debris_/_Vandalism"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Environmental_Obstruction_/_Wildlife"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#FRA/NTSB/PTSB/Other_Agency"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Fire_On/Near_Tracks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Heavy_Ridership_/_Slow_Loading"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Lavatories_&amp;_Toilets"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Main_&amp;_Aux_Electric_Power"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Oil_Leak/Spill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Propulsion_&amp;_Dynamic_Brake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Rain/Flooding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Speed_Restriction_(weather-related)"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Track_&amp;_Structures"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Trucks_&amp;_Suspension"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Capital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Customer-Related"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Engineering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Environmental"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Hold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Mechanical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Other"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Other_Agency"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Police"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sunny/ontologies/2026/3/untitled-ontology-4#Transportation"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
